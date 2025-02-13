@@ -16,41 +16,34 @@
             padding: 20px;
             box-sizing: border-box;
         }
-
         /* Larger text on bigger screens */
         .header_text {
             font-size: 3rem; /* Bigger default size */
             font-weight: bold;
             margin-bottom: 20px;
         }
-
         .gif_container img {
             width: 60vw; /* Makes the GIF scale with screen size */
             max-width: 350px; /* Slightly bigger max size */
             height: auto; /* Maintains aspect ratio */
         }
-
         .text {
             font-size: 1.8rem; /* Increased text size */
             margin-top: 20px;
         }
-
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .header_text {
                 font-size: 2.5rem;
             }
-
             .text {
                 font-size: 1.5rem;
             }
         }
-
         @media (max-width: 480px) {
             .header_text {
                 font-size: 2rem;
             }
-
             .text {
                 font-size: 1.2rem;
             }
