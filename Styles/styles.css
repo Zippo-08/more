@@ -5,10 +5,7 @@ body {
     height: 100vh;
     background-color: #CBE6EF;
 }
-.no-button-container{
-    position: relative;
-    display: inline-bock;
-    
+
 /* Position the "No" button absolutely within body */
 #noButton {
     position: absolute;
@@ -23,12 +20,6 @@ body {
     margin-right: 150px;
     border: 2px solid #ffffff;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-#sikeText{
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 
@@ -91,14 +82,5 @@ body {
     text-align: center;
     margin-top: -10px; /* Adjust spacing */
     opacity: 0.8; /* Slightly faded look */
-}
-.hidden {
-    visibility: hidden; /* Initially hidden */
-    font-family: 'Nunito', sans-serif;
-    font-size: 14px;
-    color: white;
-    text-align: center;
-    margin-top: 5px;
-    opacity: 0.9;
 }
 
