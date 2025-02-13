@@ -1,26 +1,20 @@
 function nextPage() {
     window.location.href = "yes.html";
 }
-
 function moveButton() {
     var noButton = document.getElementById('noButton');
-    var sikeText = document.getELementById('sikeText');
     var x = Math.random() * (window.innerWidth - noButton.offsetWidth);
     var y = Math.random() * (window.innerHeight - noButton.offsetHeight);
     noButton.style.position = "absolute";
     noButton.style.left = `${x}px`;
     noButton.style.top = `${y}px`;
-    sikeText.style.visibility = "visible";
 }
-
 // Check if the device is mobile
 function isMobile() {
     return /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
 }
-
 document.addEventListener("DOMContentLoaded", function () {
     var noButton = document.getElementById('noButton');
-
     if (isMobile()) {
         // On mobile: Move when the button is tapped
         noButton.addEventListener("click", moveButton);
