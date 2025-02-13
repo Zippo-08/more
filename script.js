@@ -4,11 +4,13 @@ function nextPage() {
 
 function moveButton() {
     var noButton = document.getElementById('noButton');
+    var sikeText = document.getELementById('sikeText');
     var x = Math.random() * (window.innerWidth - noButton.offsetWidth);
     var y = Math.random() * (window.innerHeight - noButton.offsetHeight);
     noButton.style.position = "absolute";
     noButton.style.left = `${x}px`;
     noButton.style.top = `${y}px`;
+    sikeText.style.visibility = "visible";
 }
 
 // Check if the device is mobile
