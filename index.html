@@ -17,25 +17,21 @@
             padding: 20px;
             box-sizing: border-box;
         }
-
         .header_text {
             font-size: 3rem; /* Larger text */
             font-weight: bold;
             margin-bottom: 20px;
         }
-
         .gif_container img {
             width: 60vw; /* Makes the GIF scale with screen size */
             max-width: 350px; /* Limits size on larger screens */
             height: auto; /* Maintains aspect ratio */
         }
-
         .buttons {
             margin-top: 20px;
             display: flex;
             gap: 15px;
         }
-
         .btn {
             padding: 15px 30px;
             font-size: 1.5rem;
@@ -45,40 +41,33 @@
             border-radius: 8px;
             font-weight: bold;
         }
-
         /* Pastel color buttons */
         #yesButton {
             background-color: #A8E6CF; /* Pastel green */
             color: #2E7D32;
         }
-
         #noButton {
             background-color: #FFB6C1; /* Pastel pink */
             color: #D81B60;
         }
-
         /* Hover effects */
         .btn:hover {
             opacity: 0.8;
         }
-
         /* Responsive design adjustments */
         @media (max-width: 768px) {
             .header_text {
                 font-size: 2.5rem;
             }
-
             .btn {
                 font-size: 1.2rem;
                 padding: 10px 20px;
             }
         }
-
         @media (max-width: 480px) {
             .header_text {
                 font-size: 2rem;
             }
-
             .btn {
                 font-size: 1rem;
                 padding: 8px 16px;
@@ -95,10 +84,7 @@
         </div>
         <div class="buttons">
             <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
-            <div class="no-button-container">
             <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
-            <p id="sikeText" class="hidden">sike you thought</p>
-        </div>
         </div>
     </div>
 </body>
